@@ -6,10 +6,10 @@ agent:
   # mode: APM
 
   # agent.key is the secret token which your agent uses to authenticate to Instana's servers.
-  key: null
+  key: ZaIvEvg4TMLRb93oSKRH9w
   # agent.downloadKey is key, sometimes known as "sales key", that allows you to download,
   # software from Instana.
-  # downloadKey: null
+  downloadKey: ZaIvEvg4TMLRb93oSKRH9w
 
   # Rather than specifying the agent key and optionally the download key, you can "bring your
   # own secret" creating it in the namespace in which you install the `instana-agent` and
@@ -22,9 +22,9 @@ agent:
   # listenAddress: "*"
 
   # agent.endpointHost is the hostname of the Instana server your agents will connect to.
-  # endpointHost: ingress-red-saas.instana.io
+  endpointHost: ingress-coral-saas.instana.io
   # agent.endpointPort is the port number (as a String) of the Instana server your agents will connect to.
-  # endpointPort: 443
+  endpointPort: 443
 
   # These are additional backends the Instana agent will report to besides
   # the one configured via the `agent.endpointHost`, `agent.endpointPort` and `agent.key` setting
@@ -204,7 +204,7 @@ cluster:
 
 # openshift specifies whether the cluster role should include openshift permissions and other tweaks to the YAML.
 # The chart will try to auto-detect if the cluster is OpenShift, so you will likely not even need to set this explicitly.
-# openshift: true
+openshift: true
 
 # rbac:
   # Specifies whether RBAC resources should be created
